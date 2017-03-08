@@ -4,6 +4,13 @@
 &nbsp; espaçamento
 <wbr/> quebra de palavras, sem infenização
 &shy quebra de palavras, com infenização
+<em></em> ênfase
+<span style="tex-decoration: underline;"> </span> pequena formatação dentro do html
+<sup></sup> sobrescrito
+<sub></sub> subescrito
+<cod></cod> exibir codificação
+<pre></pre> pré formatado
+
 
 Simbolos especiais:
 
