@@ -1,0 +1,28 @@
+﻿Tags:
+
+</br> quebra de linha
+&nbsp; espaçamento
+<wbr/> quebra de palavras, sem infenização
+&shy quebra de palavras, com infenização
+
+Simbolos especiais:
+
+&lt; <
+&gt; >
+&le; >=
+ge; <=
+
+&pound; símbolo monetário
+&yen; símbolo monetário
+&euro; símbolo monetário
+
+&copy; Copyright
+&reg; marca registrada
+&trade; TM
+
+&permil; por mil
+&sum; soma
+&infin; infinito
+&times; multiplicação
+
+
