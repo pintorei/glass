@@ -10,6 +10,9 @@
 <sub></sub> subescrito
 <cod></cod> exibir codificação
 <pre></pre> pré formatado
+<ol type=""></ol> lista ordenada
+<ul></ul> lista desordenada
+<li></li> item de lista
 
 
 Simbolos especiais:
