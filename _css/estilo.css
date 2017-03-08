@@ -55,7 +55,7 @@ nav#menu ul{
 	text-transform: uppercase;/*transformar letras em maiuscula*/
 	position: absolute; /*a lista passa a ter uma posição aboluta em relação a toda a página podendo ser posicionado*/
 	top: -20px;
-	left: 30%;
+	left: 300px;
 }
 /*configura a lista*/
 
@@ -64,10 +64,25 @@ nav#menu li{
 	background-color: #dddddd;
 	padding: 10px;
 	margin: 2px;
+	transition: background-color 1s; /*transição da cor de fundo dos itens de menu*/
 }
 /*configura os itens da lista de menu*/
 
+nav#menu li:hover{
+	background-color: #606060;
+	
+}
+/*configura o efeito do menu ao passar o mouse por cima*/
 nav#menu h1{
 	display: none;/*oculta o título do menu*/
+}
+
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+/*configura os links do menu para mudar de cor e tirar o sublinhado*/
+nav#menu a:hover{
+	color: #ffffff;
 }
 
