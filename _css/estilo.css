@@ -2,11 +2,13 @@
 body {
 	background-color: white;
 	color: rgba(0,0,0,1);
-} /*cor de fundo e cor da letra de toda a página*/
+}
+/*cor de fundo e cor da letra de toda a página*/
 p {
 	text-align: justify;
 	text-indent: 50px;
-} /*alinhamento e identação dos parágrafos*/
+}
+/*alinhamento e identação dos parágrafos*/
 /*formatação de imagens*/
 
 figure.foto-legenda {
@@ -14,11 +16,15 @@ figure.foto-legenda {
 	/*define a posição relativa em relação ao local que foi inserida*/
 	border: 8px solid white;
 	box-shadow: 1px 1px 4px #000000;/*cria uma sombra em torno da imagem vertical horizontal espalhamento e cor*/
-} /*configura tudo que for referente a image com esta classe*/
+}
+/*configura tudo que for referente a image com esta classe*/
 figure.foto-legenda img {
 	width: 100%;
 	height: 100%;
-}/*configura os atributos de imagens com a classe foto-legenda tornando a imagem autoresize de acordo zoom do navegador*/
+}
+/*configura os atributos de imagens com a classe foto-legenda tornando a imagem autoresize de acordo zoom do navegador*/
+
+
 figure.foto-legenda figcaption {
 	opacity: 0;
 	position: absolute;
@@ -31,9 +37,37 @@ figure.foto-legenda figcaption {
 	padding: 10px;/*borda interna do objeto*/
 	box-sizing: border-box;/*cria um box limitado a borda do objeto pai*/
 	transition: opacity 1s;
-	
 }
-figure.foto-legenda:hover figcaption{
+figure.foto-legenda:hover figcaption {
 	opacity: 1;
 }/*cria um efeito quando o mouse passa por cima do figure*/
+
+/*=========================================*/
+
+/*Formatação do menu*/
+nav#menu {
+	display: block; /*blocos podem flutuar pela tela*/
+}
+/*faz o menu flutuar*/
+
+nav#menu ul{
+	list-style: none;/*retirar a marcação de disco da lista*/
+	text-transform: uppercase;/*transformar letras em maiuscula*/
+	position: absolute; /*a lista passa a ter uma posição aboluta em relação a toda a página podendo ser posicionado*/
+	top: -20px;
+	left: 30%;
+}
+/*configura a lista*/
+
+nav#menu li{
+	display: inline-block;/*apresenta os itens da lista em uma mesma linha */
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+}
+/*configura os itens da lista de menu*/
+
+nav#menu h1{
+	display: none;/*oculta o título do menu*/
+}
 

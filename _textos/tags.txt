@@ -10,7 +10,7 @@
 <sub></sub> subescrito
 <cod></cod> exibir codificação
 <pre></pre> pré formatado
-<ol type=""></ol> lista ordenada
+<ol type="" start""></ol> lista ordenada (começar de um item a frente)
 <ul></ul> lista desordenada
 <li></li> item de lista
 
