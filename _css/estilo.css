@@ -1,10 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');/*define o uso de uma fonte do repositório do google*/
-
-@font-face{
+@font-face {
 	font-family: 'FonteLogo';
 	src: url(../_fonts/bubblegum-sans-regular.otf);
-	
 }
 /*define uma fonte personalizada pra poder ser usada na página*/
 body {
@@ -26,7 +24,7 @@ header#cabecalho img#icone {
 	;
 }
 /*configuração da imagem do cabeçalho pra ela ela fique flutuando*/
-header#cabecalho h1{
+header#cabecalho h1 {
 	font-family: 'FonteLogo', sans-serif;
 	font-size: 30px;
 	color: #606060;
@@ -36,14 +34,13 @@ header#cabecalho h1{
 }
 /*configura o h1 do cabeçalho*/
 
-header#cabecalho h2{
+header#cabecalho h2 {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 15px;
 	color: #888888;
 	padding: 0px;
 	margin-top: 0px;
 }
-
 /*Formatação do menu*/
 nav#menu {
 	display: block; /*blocos podem flutuar pela tela*/
@@ -101,51 +98,71 @@ p {
 /*alinhamento e identação dos parágrafos*/
 
 /*configura a área principal, lateral e rodapé*/
-section#corpo{
+section#corpo {
 	display: block;/*tem que definir como bloco pra poder flutuar*/
 	width: 500px;
 	float: left;/*flutuar do lado esquerdo*/
 	border-right: 1px solid #606060; /*cria borda lateral para dividir as sessões*/
 	padding-right: 20px;/*borda interna*/
 }
-
-section#corpo table#tabelaspec{
+section#corpo table#tabelaspec {
 	border: 1px solid #606060;
 	border-spacing: 0px;/*remove o espaçamento entre as celulas*/
 	margin-left: auto;/*centralizar a tabela*/
-	margin-right: auto;/*centralizar a tabela*/ 
+	margin-right: auto;/*centralizar a tabela*/
 }
-
-section#corpo table#tabelaspec td{
+section#corpo table#tabelaspec caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+/*configura o caption*/
+section#corpo table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+/*configura o span dentro da caption*/
+section#corpo table#tabelaspec td {
 	border: 1px solid #606060;
 	padding: 10px;
 	text-align: center;
 	vertical-align: top;
-	
 }
+/*configura as colunas*/
 
-aside#lateral{
+section#corpo table#tabelaspec td.ce {
+	background-color: #cecece;
+	text-align: left;
+}
+/*configura a coluna que usa a classe ce*/
+section#corpo table#tabelaspec td.cd {
+	color: #ffffff;
+	background-color: #606060;
+	font-weight: bold;
+	text-align: right;
+}
+/*configura a coluna que usa a classe cd*/
+aside#lateral {
 	display: block;
 	width: 350px;
 	float: right;/*flutuar do lado direito*/
 }
-
-footer#rodape{
+footer#rodape {
 	clear: both;/*limpa  a divisão pra ser apresentado na parte de baixo*/
 	border-top: 1px solid #606060;
 	font-weight: 600;/*negrito*/
-	
 }
-
-footer#rodape p{
+footer#rodape p {
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
 }
-footer#rodape a{
+footer#rodape a {
 	text-decoration: underline;
 }
-
 /*formatação de imagens*/
 figure.foto-legenda {
 	position: relative;
@@ -178,4 +195,3 @@ figure.foto-legenda:hover figcaption {
 	opacity: 1;
 }/*cria um efeito quando o mouse passa por cima do figure*/
 /*=========================================*/
-
