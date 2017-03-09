@@ -44,54 +44,6 @@ header#cabecalho h2{
 	margin-top: 0px;
 }
 
-div#interface {
-	width: 900px; /*largura*/
-	background-color: #ffffff;
-	margin: -20px auto 0px auto; /*centralizar a interface cima esquerda baixo direita*/
-	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-	padding: 10px; /*afastar o texto da borda da interface*/
-	position: relative;
-}
-/*configura as caracteristicas da interface*/
-p {
-	text-align: justify;
-	text-indent: 50px;
-}
-/*alinhamento e identação dos parágrafos*/
-/*formatação de imagens*/
-
-figure.foto-legenda {
-	position: relative;
-	/*define a posição relativa em relação ao local que foi inserida*/
-	border: 8px solid white;
-	box-shadow: 1px 1px 4px #000000;/*cria uma sombra em torno da imagem vertical horizontal espalhamento e cor*/
-}
-/*configura tudo que for referente a image com esta classe*/
-figure.foto-legenda img {
-	width: 100%;
-	height: 100%;
-}
-/*configura os atributos de imagens com a classe foto-legenda tornando a imagem autoresize de acordo zoom do navegador*/
-
-
-figure.foto-legenda figcaption {
-	opacity: 0;
-	position: absolute;
-	/*define a posição absoluta em relação a relativa de figure.foto-legenda*/
-	top: 0px;
-	background-color: rgba(0,0,0,.4);
-	color: white;
-	width: 100%;
-	height: 100%;
-	padding: 10px;/*borda interna do objeto*/
-	box-sizing: border-box;/*cria um box limitado a borda do objeto pai*/
-	transition: opacity 1s;
-}
-figure.foto-legenda:hover figcaption {
-	opacity: 1;
-}/*cria um efeito quando o mouse passa por cima do figure*/
-/*=========================================*/
-
 /*Formatação do menu*/
 nav#menu {
 	display: block; /*blocos podem flutuar pela tela*/
@@ -131,3 +83,84 @@ nav#menu a {
 nav#menu a:hover {
 	color: #ffffff;
 }
+/*==================================*/
+
+div#interface {
+	width: 900px; /*largura*/
+	background-color: #ffffff;
+	margin: -20px auto 0px auto; /*centralizar a interface cima esquerda baixo direita*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px; /*afastar o texto da borda da interface*/
+	position: relative;
+}
+/*configura as caracteristicas da interface*/
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+/*alinhamento e identação dos parágrafos*/
+
+/*configura a área principal, lateral e rodapé*/
+section#corpo{
+	display: block;/*tem que definir como bloco pra poder flutuar*/
+	width: 500px;
+	float: left;/*flutuar do lado esquerdo*/
+	border-right: 1px solid #606060; /*cria borda lateral para dividir as sessões*/
+	padding-right: 20px; /*borda interna*/
+}
+
+aside#lateral{
+	display: block;
+	width: 350px;
+	float: right;/*flutuar do lado direito*/
+}
+
+footer#rodape{
+	clear: both;/*limpa  a divisão pra ser apresentado na parte de baixo*/
+	border-top: 1px solid #606060;
+	font-weight: 600
+	
+}
+
+footer#rodape p{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+footer#rodape a{
+	text-decoration: underline;
+}
+
+/*formatação de imagens*/
+figure.foto-legenda {
+	position: relative;
+	/*define a posição relativa em relação ao local que foi inserida*/
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px #000000;/*cria uma sombra em torno da imagem vertical horizontal espalhamento e cor*/
+}
+/*configura tudo que for referente a image com esta classe*/
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+/*configura os atributos de imagens com a classe foto-legenda tornando a imagem autoresize de acordo zoom do navegador*/
+
+
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	/*define a posição absoluta em relação a relativa de figure.foto-legenda*/
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;/*borda interna do objeto*/
+	box-sizing: border-box;/*cria um box limitado a borda do objeto pai*/
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}/*cria um efeito quando o mouse passa por cima do figure*/
+/*=========================================*/
+
