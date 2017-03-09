@@ -13,6 +13,8 @@
 <ol type="" start""></ol> lista ordenada (começar de um item a frente)
 <ul></ul> lista desordenada
 <li></li> item de lista
+<tr></tr> linhas de uma tabela
+<td></td> colunas de uma linha
 
 
 Simbolos especiais:

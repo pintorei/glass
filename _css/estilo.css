@@ -106,7 +106,22 @@ section#corpo{
 	width: 500px;
 	float: left;/*flutuar do lado esquerdo*/
 	border-right: 1px solid #606060; /*cria borda lateral para dividir as sessões*/
-	padding-right: 20px; /*borda interna*/
+	padding-right: 20px;/*borda interna*/
+}
+
+section#corpo table#tabelaspec{
+	border: 1px solid #606060;
+	border-spacing: 0px;/*remove o espaçamento entre as celulas*/
+	margin-left: auto;/*centralizar a tabela*/
+	margin-right: auto;/*centralizar a tabela*/ 
+}
+
+section#corpo table#tabelaspec td{
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+	
 }
 
 aside#lateral{
@@ -118,7 +133,7 @@ aside#lateral{
 footer#rodape{
 	clear: both;/*limpa  a divisão pra ser apresentado na parte de baixo*/
 	border-top: 1px solid #606060;
-	font-weight: 600
+	font-weight: 600;/*negrito*/
 	
 }
 
