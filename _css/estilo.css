@@ -5,16 +5,37 @@ body {
 }
 /*cor de fundo e cor da letra de toda a página*/
 
-header#cabecalho{
-	
+header#cabecalho {
+	border-bottom: 1px #606060 solid;/*borda*/
+	height: 150px; /*tamanho do cabeçalho*/
+	background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px; /*define imagem para o cabeçalho, parametro para não repetir e posicionamento*/
 }
-
+/*configura o cabeçalho*/
 header#cabecalho img#icone {
 	position: absolute;
 	left: 750px;
-	top: 50px;;
+	top: 80px;
+	;
 }
 /*configuração da imagem do cabeçalho pra ela ela fique flutuando*/
+header#cabecalho h1{
+	font-family: Arial, sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+/*configura o h1 do cabeçalho*/
+
+header#cabecalho h2{
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+}
+
 div#interface {
 	width: 900px; /*largura*/
 	background-color: #ffffff;
@@ -22,7 +43,6 @@ div#interface {
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	padding: 10px; /*afastar o texto da borda da interface*/
 	position: relative;
-	
 }
 /*configura as caracteristicas da interface*/
 p {
@@ -62,7 +82,6 @@ figure.foto-legenda figcaption {
 figure.foto-legenda:hover figcaption {
 	opacity: 1;
 }/*cria um efeito quando o mouse passa por cima do figure*/
-
 /*=========================================*/
 
 /*Formatação do menu*/
@@ -71,7 +90,7 @@ nav#menu {
 }
 /*faz o menu flutuar*/
 
-nav#menu ul{
+nav#menu ul {
 	list-style: none;/*retirar a marcação de disco da lista*/
 	text-transform: uppercase;/*transformar letras em maiuscula*/
 	position: absolute; /*a lista passa a ter uma posição aboluta em relação a toda a página podendo ser posicionado*/
@@ -80,7 +99,7 @@ nav#menu ul{
 }
 /*configura a lista*/
 
-nav#menu li{
+nav#menu li {
 	display: inline-block;/*apresenta os itens da lista em uma mesma linha */
 	background-color: #dddddd;
 	padding: 10px;
@@ -89,23 +108,18 @@ nav#menu li{
 }
 /*configura os itens da lista de menu*/
 
-nav#menu li:hover{
+nav#menu li:hover {
 	background-color: #606060;
-	
 }
 /*configura o efeito do menu ao passar o mouse por cima*/
-nav#menu h1{
+nav#menu h1 {
 	display: none;/*oculta o título do menu*/
 }
-
-nav#menu a{
+nav#menu a {
 	color: #000000;
 	text-decoration: none;
 }
 /*configura os links do menu para mudar de cor e tirar o sublinhado*/
-nav#menu a:hover{
+nav#menu a:hover {
 	color: #ffffff;
 }
-
-
-
