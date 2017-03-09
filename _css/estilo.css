@@ -1,4 +1,12 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');/*define o uso de uma fonte do repositório do google*/
+
+@font-face{
+	font-family: 'FonteLogo';
+	src: url(../_fonts/bubblegum-sans-regular.otf);
+	
+}
+/*define uma fonte personalizada pra poder ser usada na página*/
 body {
 	background-color: #dddddd;
 	color: rgba(0,0,0,1);
@@ -19,7 +27,7 @@ header#cabecalho img#icone {
 }
 /*configuração da imagem do cabeçalho pra ela ela fique flutuando*/
 header#cabecalho h1{
-	font-family: Arial, sans-serif;
+	font-family: 'FonteLogo', sans-serif;
 	font-size: 30px;
 	color: #606060;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
@@ -29,7 +37,7 @@ header#cabecalho h1{
 /*configura o h1 do cabeçalho*/
 
 header#cabecalho h2{
-	font-family: Arial, sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 15px;
 	color: #888888;
 	padding: 0px;
