@@ -6,16 +6,9 @@
 <script>
 	var quebrada = false;
 	function mudaLampada(tipo){
-		if (tipo == 1){
-			arquivo = "_imagens/lampada-acesa.jpg";
-		} else if (tipo == 2){
-			arquivo = "_imagens/lampada-apagada.jpg";
-		} else {
-			arquivo = "_imagens/lampada-quebrada.jpg";
-		}
 		if (quebrada == false){
-			document.getElementById("luz").src = arquivo;
-			if (tipo == 3){
+			document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+			if (tipo == 'lampada-quebrada'){
 				quebrada = true;
 			}
 		}
@@ -27,7 +20,7 @@
 
 <body>
 <h1>Aprendendo JS</h1>
-<img src="_imagens/lampada-apagada.jpg" id="luz" onMouseOver="mudaLampada(1)" onMouseOut="mudaLampada(2)" onClick="mudaLampada(3)"/> 
+<img src="_imagens/lampada-apagada.jpg" id="luz" onMouseOver="mudaLampada('lampada-acesa')" onMouseOut="mudaLampada('lampada-apagada')" onClick="mudaLampada('lampada-quebrada')"/> 
 <script>
 	/*document.write('Hoje é dia ' + Date());*/
 	<

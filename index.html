@@ -10,6 +10,8 @@
 <!--definir o estilo css que será usado na página-->
 
 </head>
+<script src="_javascript/funcoes.js"></script>
+
 <body>
 <div id="interface"> <!--define a limitação do site-->
   <header id="cabecalho"> <!--define a área do cabeçalho-->
@@ -18,14 +20,14 @@
       <h2>A revolução do Google está chegando</h2>
     </hgroup>
     <img src="_imagens/glass-oculos-preto-peq.png" id="icone"> <!--define uma imagem para um ponto específico que será alterado pelo css-->
-    <nav id="menu">
+    <nav id="menu" onMouseOut="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><!--colocar o onMouseOut aqui a pq ao tirar o mouse de cima do nav a foto do óculos volta-->
       <h1>Menu Principal</h1>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="specs.html">Especificações</a></li>
-        <li><a href="fotos.html">Fotos</a></li>
-        <li><a href="multimidia.html">Multimídia</a></li>
-        <li><a href="fale-conosco.html">Fale conosco </a></li>
+        <li onMouseOver="mudaFoto('_imagens/home.png')"><a href="index.html">Home</a></li>
+        <li onMouseOver="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+        <li onMouseOver="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+        <li onMouseOver="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onMouseOver="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco </a></li>
       </ul>
     </nav>
     <!--cria menu de navegação--> 
