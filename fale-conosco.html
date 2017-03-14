@@ -8,67 +8,98 @@
 <title>Tudo sobre Google Glass</title>
 <link rel="stylesheet" href="_css/estilo.css"/>
 <!--definir o estilo css que será usado na página-->
-
+<link rel="stylesheet" href="_css/form.css"/>
 </head>
 <script src="_javascript/funcoes.js"></script>
 
 <body>
-<div id="interface"> <!--define a limitação do site-->
-  <header id="cabecalho"> <!--define a área do cabeçalho-->
-    <hgroup>
-      <h1>Google Glass</h1>
-      <h2>A revolução do Google está chegando</h2>
-    </hgroup>
-    <img src="_imagens/glass-oculos-preto-peq.png" id="icone"> <!--define uma imagem para um ponto específico que será alterado pelo css-->
-    <nav id="menu" onMouseOut="mudaFoto('_imagens/contato.png')"><!--colocar o onMouseOut aqui a pq ao tirar o mouse de cima do nav a foto do óculos volta-->
-      <h1>Menu Principal</h1>
-      <ul>
-        <li onMouseOver="mudaFoto('_imagens/home.png')"><a href="index.html">Home</a></li>
-        <li onMouseOver="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-        <li onMouseOver="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
-        <li onMouseOver="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
-        <li onMouseOver="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco </a></li>
-      </ul>
-    </nav>
-    <!--cria menu de navegação--> 
-  </header>
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
+<div id="interface">
+<!--define a limitação do site-->
+<header id="cabecalho"> <!--define a área do cabeçalho-->
+  <hgroup>
+    <h1>Google Glass</h1>
+    <h2>A revolução do Google está chegando</h2>
+  </hgroup>
+  <img src="_imagens/glass-oculos-preto-peq.png" id="icone"> <!--define uma imagem para um ponto específico que será alterado pelo css-->
+  <nav id="menu" onMouseOut="mudaFoto('_imagens/contato.png')"><!--colocar o onMouseOut aqui a pq ao tirar o mouse de cima do nav a foto do óculos volta-->
+    <h1>Menu Principal</h1>
+    <ul>
+      <li onMouseOver="mudaFoto('_imagens/home.png')"><a href="index.html">Home</a></li>
+      <li onMouseOver="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+      <li onMouseOver="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+      <li onMouseOver="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+      <li onMouseOver="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco </a></li>
+    </ul>
+  </nav>
+  <!--cria menu de navegação--> 
+</header>
+<section id="corpo-full">
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
+  <hgroup>
+    <h3>Fale Conosco > Contato</h3>
+    <h1>Formulário de Contato</h1>
+    <h2>por Gustavo Guanabara</h2>
+    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+  </hgroup>
+</header>
+<form>
+  <fieldset id="usuario">
+    <!--conjunto de campos-->
+    <legend>Identificação do Usuário</legend>
+    <p>
+      <label for="cNome">Nome:</label>
+      <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/>
+    </p>
+    <p>
+      <label for="cSenha">Senha:</label>
+      <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/>
+    </p>
+    <p>
+      <label for="cMail">E-mail:</label>
+      <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="email@provedor.com"/>
+    </p>
+    <fieldset id="sexo">
+      <legend>Sexo</legend>
+      <!--grupos de botões de ráido tem que ter o mesmo nome-->
+      <input type="radio" name="tSexo" id="cMasc" checked/>
+      <!--checked inicia a página com a opção marcada-->
+      <label for="cMasc">Masculino</label>
+      <!--label serve para ao clicar no nome marcar o botão de rádio--> 
+      <br>
+      <input type="radio" name="tSexo" id="cFem" />
+      <label for="cFem">Feminino</label>
+    </fieldset>
+    <p>
+      <label for="cNasc">Data de Nascimento:</label>
+      <input type="date" name="tNasc" id="cNasc"/>
+    </p>
+  </fieldset>
+  <fieldset id="endereco">
+    <legend>Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro: </label><input type="text" name="tRua" id="cRua" size="14" maxlength="80" placeholder="Rua, Av, Travessa..."></p>
+    <p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+    <p>Estado:</p>
+    <p>Cidade:</p>
+  </fieldset>
+  <fieldset id="mensagem">
+    <legend>Mensagem do Usuário</legend>
     Grau de Urgência:
     Mensagem:
-
-Quero um Google Glass
+  </fieldset>
+  <fieldset id="pedido">
+    <legend>Quero um Google Glass </legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+  </fieldset>
+  [BOTÃO ENVIAR]
+</form>
 <footer id="rodape"> <br>
-    <p>Copyright 2013 - by Gustavo Guanabara</p>
-    <p><a href="http://www.facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://www.twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
-  </footer>
+  <p>Copyright 2013 - by Gustavo Guanabara</p>
+  <p><a href="http://www.facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://www.twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+</footer>
 </div>
 </body>
 </html>
